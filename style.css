@@ -1,0 +1,88 @@
+
+.Container {
+
+        padding: 0;
+
+        margin: 0;
+
+}
+
+ 
+
+.Container li {
+        list-style-type: none; 
+}
+
+
+
+.Node {
+    margin-left: 18px;
+    zoom: 1; 
+}
+
+.IsRoot {
+    margin-left: 0;
+}
+
+.Expand {
+    width: 18px;
+    height: 18px;
+    float: left;
+}
+
+ .Content {
+
+    margin-left:18px;
+    min-height: 18px;
+}
+
+* html .Content {
+
+    height: 18px; 
+}
+
+.ExpandOpen .Expand { 
+    background-image: url(img/minus.gif); 
+}
+
+.ExpandClosed .Expand {
+    background-image: url(img/plus.gif);
+}
+.ExpandLeaf .Expand {
+    background-image: url(img/leaf.gif);
+}
+
+.Node {
+    margin-left: 18px;
+    zoom: 1;
+    background-image : url(img/i.gif);
+    background-position : top left;
+    background-repeat : repeat-y;
+}
+
+.IsLast {
+    background-image: url(img/i_half.gif);
+    background-repeat : no-repeat;
+}
+
+.ExpandOpen .Container {
+	display: block;
+}
+
+.ExpandClosed .Container {
+	display: none;
+	 background-image: url(img/closed.gif);
+}
+.ExpandOpen .Expand, .ExpandClosed .Expand {
+	cursor: pointer; /* иконки скрытия-раскрытия */
+	 background-image: url(img/open.gif);
+}
+
+.ExpandLeaf .Expand {
+	cursor: auto; /* листовой узел */
+}
+
+.ExpandLoading   {
+  
+    background-image: url(img/expand_loading.gif);
+}
